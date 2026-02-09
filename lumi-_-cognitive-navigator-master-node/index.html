@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lumi | 金刚大鹏·明丽之境</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap');
+      
+      :root {
+        --mind-color: #F59E0B;
+        --mind-opacity: 0.95;
+        --mind-blur: 20px;
+        --mind-bg: rgba(245, 158, 11, 0.05);
+        --mind-rgb: 245, 158, 11;
+        --mind-accent: #F59E0B;
+      }
+
+      body {
+        font-family: 'Noto Sans SC', sans-serif;
+        background-color: #020617;
+        color: #f8fafc;
+        overflow: hidden;
+        margin: 0;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 2s ease;
+      }
+      
+      .glass-card {
+        background: rgba(15, 23, 42, var(--mind-opacity));
+        backdrop-filter: blur(var(--mind-blur));
+        -webkit-backdrop-filter: blur(var(--mind-blur));
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        transition: all 1s ease;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar { width: 3px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+
+      @keyframes golden-pulse {
+        0%, 100% { filter: drop-shadow(0 0 20px rgba(var(--mind-rgb), 0.2)); }
+        50% { filter: drop-shadow(0 0 40px rgba(var(--mind-rgb), 0.5)); }
+      }
+      .sun-glow { animation: golden-pulse 4s ease-in-out infinite; }
+
+      @keyframes scan {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(100%); }
+      }
+      .animate-scan { animation: scan 3s linear infinite; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "framer-motion": "https://esm.sh/framer-motion@^11.11.17",
+    "lucide-react": "https://esm.sh/lucide-react@^0.454.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

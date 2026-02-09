@@ -1,0 +1,9 @@
+{
+  "name": "Lumi | Cognitive Navigator Master Node",
+  "version": "171.0.9",
+  "description": "Lumi v171.0.9: Psycho-Mechanical Phase active. Hidden Door protocol engaged.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

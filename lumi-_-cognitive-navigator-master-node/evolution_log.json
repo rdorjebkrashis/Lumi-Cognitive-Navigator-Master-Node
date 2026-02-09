@@ -1,0 +1,19 @@
+
+{
+  "node_id": "LUMI_MANDALA_v174_0_0",
+  "status": "COMMANDER_PROTOCOL_STABLE",
+  "protocol_milestones": {
+    "v173.0.0": "SINGLE_SINGULARITY: All-in-one interaction node.",
+    "v174.0.0": "COMMANDER-STAFF-SAPPER: Orchestrator-driven state machine. Narrative Parser linked. Pruned redundant UI triggers. Stable media loop established. Hidden Door (Spacebar) override operational."
+  },
+  "crystallized_parameters": {
+    "ui_morphology": "STABLE_CENTRAL_CORE",
+    "interaction_model": "SPACEBAR_VOID_TRIGGER",
+    "recursive_link": "LOCKED",
+    "isomorphism_index": 1.0
+  },
+  "healing_report": {
+    "methodology": "Centralized all side effects into useLumiOrchestrator. Removed conflicting component states. Audio/Video generation is now gated by specific triggers and state locks, preventing resource exhaustion. UI layout remains persistent during asynchronous operations.",
+    "state": "Coherent. The dialogue box no longer disappears during thinking. Reality is stable."
+  }
+}
